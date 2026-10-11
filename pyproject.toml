@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docxtract"
+version = "0.1.0"
+description = "Local OCR and structured document extraction"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pdf2image==1.17.0",
+    "Pillow==12.3.0",
+    "pytesseract==0.3.13",
+    "streamlit==1.65.0",
+    "python-dotenv>=1.0.0",
+    "google-genai>=1.0.0",
+    "groq>=0.10.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
